@@ -1,0 +1,7 @@
+p {
+  font-family: Lato;
+}
+
+.completeTask {
+  text-decoration-line: line-through;
+}

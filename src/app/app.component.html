@@ -1,0 +1,16 @@
+<ul>
+  <li *ngFor="let task of todoLists">
+    <p>
+      <label [ngClass]="task.completed ? 'completeTask' : ''"
+        ><b>Task:</b> {{ task.title }}
+      </label>
+      <input type="checkbox" [(ngModel)]="task.completed" />
+    </p>
+    <p>
+      <label
+        ><b>Status:</b>
+        {{ task.completed ? 'Task Completed' : 'Task Not Completed' }}
+      </label>
+    </p>
+  </li>
+</ul>
